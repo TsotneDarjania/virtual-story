@@ -1,14 +1,15 @@
 import React from 'react'
+import HomePageTitle from '../../Components/molecules/homePageTitle'
 
-import Button from '../../Components/atoms/button'
+
+import "./style.css"
 
 const HomePage = () => {
   return (
-    <div>
-        <Button onClick={ () => console.log("click")} className="menu-btn" innerText="დაწყება" />
-        
-
-
+    <div className='home-page'>
+        <div className='home-page-homePageTitle'>
+            <HomePageTitle />
+        </div>   
     </div>
   )
 }

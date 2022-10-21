@@ -1,0 +1,41 @@
+
+
+.home-page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.homepageTitle-letter{
+    animation-name: letter-top-scroll;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes letter-top-scroll {
+    from{
+        margin-top: -40px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes letter-bottom-scroll {
+    from{
+        margin-top: 40px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.homepageTitle-space{
+    width: 70px;
+}

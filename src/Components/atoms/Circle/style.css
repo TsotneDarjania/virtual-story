@@ -1,0 +1,15 @@
+
+
+:root{
+    --default-color : "white";
+}
+
+.circle{
+    transition: 0.1s;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+

@@ -1,7 +1,8 @@
 
 
-.menu-btn{
-    width: 120px;
-    height: 30px;
+.default-btn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
