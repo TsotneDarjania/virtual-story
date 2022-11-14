@@ -4,6 +4,13 @@
     height: 90px;
     bottom: 0;
     background-color: rgb(44, 40, 77);
+
+    opacity: 0;
+    animation-name: show-popup-anim;
+    animation-delay: 10.6s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 
 .company-icon{

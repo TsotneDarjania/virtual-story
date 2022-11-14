@@ -65,7 +65,12 @@ const HomePage = () => {
           circles && <div className='home-page-circles'> <Circles/>   </div>
         } 
 
-        <button className='play'> დაწყება </button>
+        <button 
+        onClick={ () => { 
+          window.open("http://miranami.itch.io/rrh?fbclid=IwAR13gCoUTFkCRI_RhXrjzrLdFXtC3U8Rh7P5otZ_ZQIZExoJ-NDpl8gzAFg")}
+        } 
+        className='play'> დაწყება 
+        </button>
 
         <Footer />
     </div>

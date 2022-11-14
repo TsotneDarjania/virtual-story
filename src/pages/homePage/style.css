@@ -4,7 +4,7 @@
 .home-page{
     position: absolute;
     width: 100vw;
-    height: 230vh;
+    height: 100vh;
     background-color:rgb(3, 0, 24);
 
     animation-fill-mode: forwards;
@@ -17,6 +17,20 @@
 
     overflow: hidden;
 
+    animation-name: home-page-anim;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes home-page-anim {
+    from{
+
+    }
+    to{
+        height: 230vh;
+    }
+    
 }
 
 @keyframes home-page {
@@ -71,7 +85,7 @@
     opacity: 0;
     animation-name: show-popup-anim;
     animation-delay: 4.6s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
@@ -82,7 +96,7 @@
     opacity: 0;
     animation-name: show-popup-anim;
     animation-delay: 6.6s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
@@ -93,7 +107,7 @@
     opacity: 0;
     animation-name: show-popup-anim;
     animation-delay: 8.6s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
