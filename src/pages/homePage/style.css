@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+Georgian&display=swap');
+
 
 .home-page{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 230vh;
     background-color:rgb(3, 0, 24);
 
     animation-fill-mode: forwards;
@@ -12,6 +14,9 @@
 
     display: flex;
     justify-content: center;
+
+    overflow: hidden;
+
 }
 
 @keyframes home-page {
@@ -19,7 +24,7 @@
 
     }
     to{
-        background-color:rgb(255, 217, 142);
+        background-color:rgb(12, 4, 42);
     } 
 }
 
@@ -34,16 +39,173 @@
 }
 
 @keyframes home-page-homePageTitle {
-    from{
-       
-    }
     to{
-        top: -10vh;
-        opacity: 0.7;
         transform: scale(0.2);
+        top: -120px;
         letter-spacing: 40px;
-        background-color: black;
+      border-bottom: 7px solid rgb(0, 238, 255);
         padding: 90px;
     }
     
 }
+
+.home-page-circles{
+    margin-top: 110px;
+}
+
+
+@keyframes show-popup-anim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.home-page-popUp-1{
+    position: absolute;
+    top: 20vh;
+
+    opacity: 0;
+    animation-name: show-popup-anim;
+    animation-delay: 4.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.home-page-popUp-2{
+    position: absolute;
+    top: 70vh;
+
+    opacity: 0;
+    animation-name: show-popup-anim;
+    animation-delay: 6.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.home-page-popUp-3{
+    position: absolute;
+    top: 120vh;
+
+    opacity: 0;
+    animation-name: show-popup-anim;
+    animation-delay: 8.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.play{
+    position: absolute;
+    top: 170vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color:rgb(4, 228, 253);
+    box-shadow: 0 0px 4px 7px rgb(4, 228, 253);
+    border: 4px solid black;
+    cursor: pointer;
+
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 29px;
+    letter-spacing: 4px;
+
+    z-index: 100;
+
+    transition: 0.5s;
+
+    opacity: 0;
+    animation-name: show-popup-anim;
+    animation-delay: 10.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.play:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.img{
+    z-index: 100;
+}
+.img:hover{
+    transition: 1s ease;
+    transform: scale(2);
+}
+
+.img-1{
+    position: absolute;
+    width: 300px;
+    left: 8vw;
+    transform: rotate(8deg);
+    transition: 1s;
+}
+
+.img-2{
+    position: absolute;
+    width: 400px;
+    right: 6vw;
+    top: -5vh;
+    transform: rotate(-5deg);
+    transition: 1s;
+}
+
+.img-3{
+    position: absolute;
+    width: 300px;
+    left: 7vw;
+    top: -2vh;
+    transform: rotate(10deg);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #070133;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(1, 91, 218);
+    border-radius: 10vw;
+    transition: 0.2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 242, 255);
+  }

@@ -2,22 +2,30 @@ import React from 'react'
 import "./style.css"
 
 import Circle from '../../atoms/Circle'
-import { useState } from 'react';
+
 
 const Circles = () => {
 
-    const n = 14;
+    const n = 200;
 
-    function randomNumberInRange(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+    const circles = () => {
+        const circles = [];
+        let animationDelay = 0.2;
+
+        for (let i = 0; i < n; i++) {
+            const circle = <div style={{animationDelay:animationDelay+"s"} } className='circles-circle' key={i} > <Circle /> </div>
+            animationDelay += 0.07;
+            circles.push(circle)
+        }
+
+
+        return circles;
     }
-
-    const [gap] = useState(randomNumberInRange(20,30));
 
     return (
     <div className='circles'>
         {  
-            [...Array(n)].map((e, i) => <Circle key={i} /> )
+           circles()
         }
     </div>
   )

@@ -1,0 +1,20 @@
+
+
+.pop-up-date{
+    position: absolute;
+    margin-top: 34px;
+    font-size: 14px;
+    color:rgb(0, 238, 255);
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgb(0, 238, 255);;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.date-left{
+    left: 0;
+}
+.date-right{
+    right: 0;
+}
+
+
