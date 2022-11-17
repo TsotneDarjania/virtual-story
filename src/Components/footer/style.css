@@ -37,11 +37,69 @@
     bottom:10px;
     left: 10px;
     font-size: 18px;
+    display: none;
 }
 
 .gmail-icon{
-    bottom: 30px;
+    bottom: 10px;
     position: absolute;
     left: 10px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .footer{
+        position: absolute;
+        width: 100vw;
+        height: 80px;
+        bottom: 0;
+        background-color: rgb(44, 40, 77);
+    
+        opacity: 0;
+        animation-name: show-popup-anim;
+        animation-delay: 10.6s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    
+    .company-icon{
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 8px;
+        width:70px;
+        opacity: 1;
+        box-shadow: 0 0px 1px 2px rgb(65, 27, 160);
+    }
+    
+    .company-name{
+        position: absolute;
+        bottom: 30px;
+        color: white;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .gmail-text{
+        display: none;
+        color: white;
+        position: absolute;
+        bottom:10px;
+        left: 10px;
+        font-size: 10px;
+    }
+    
+    .gmail-icon{
+        bottom: 10px;
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
 }

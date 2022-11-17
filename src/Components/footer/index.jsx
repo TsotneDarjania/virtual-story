@@ -13,7 +13,9 @@ const Footer = () => {
        <p className='company-name'> Virtual Story 2022</p>
        <p className='gmail-text'> virtualstory.info@gmail.com</p>
        <div className='gmail-icon'>
-        <FaEnvelope color='white'  size={50} />
+        <FaEnvelope onClick={() => {
+          window.open("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=virtualstory.info@gmail.com")
+        }} color='white'  size={50} />
        </div>
        
     </div>

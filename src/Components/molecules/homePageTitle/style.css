@@ -39,3 +39,41 @@
 .homepageTitle-space{
     width: 70px;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .homepageTitle-space{
+        width: 60px;
+    }
+    .home-page-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .homepageTitle-space{
+        width: 30px;
+    }
+    .home-page-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .homepageTitle-space{
+        width: 30px;
+    }
+    .home-page-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+}
+
